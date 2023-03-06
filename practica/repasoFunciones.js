@@ -1,6 +1,8 @@
 function calcularConsumo (edadActual, consumoPorDia, productos){
-    if (edadActual < 30) {
-       let cuenta = edadActual * consumoPorDia;
+
+    let edadMaxima = 100;
+    if (edadActual < edadMaxima) {
+       let cuenta = (edadMaxima - edadActual) * consumoPorDia;
        return 'necesitaras ' + cuenta + ' de ' + productos + ' para que dure el resto de tu vida' 
    }
 }
